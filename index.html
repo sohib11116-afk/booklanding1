@@ -8,10 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+?
   </head>
   <body>
     <div class="parent">
-      <div class="child">
+      <div class="child" data-aos="fade-right">
         <button class="first">Science Fiction</button>
         <h1 class="firsth1">Beyond the Quantum Horizon</h1>
         <p class="paragraph1">
@@ -22,7 +23,36 @@
         <button class="button2">Get Your Copy</button>
         <button class="button3">Read Preview</button>
       </div>
-      <div class="child2"><img src="book-1 (1).webp" alt="image" class="image"></div>
+      <div class="child2" data-aos="fade-left"><img src="book-1 (1).webp" alt="image" class="image"></div>
     </div>
+       <!-- <div class="parent">
+      <div class="child" data-aos="fade-right">
+        <button class="first">Science Fiction</button>
+        <h1 class="firsth1">Beyond the Quantum Horizon</h1>
+        <p class="paragraph1">
+          A journey through time and space that will transform your perception
+        </p>
+        <b>By John Doe</b>
+        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada.</p>
+        <button class="button2">Get Your Copy</button>
+        <button class="button3">Read Preview</button>
+      </div>
+      <div class="child2" data-aos="fade-left"><img src="book-1 (1).webp" alt="image" class="image"></div>
+    </div> -->
+
+    <script>
+    
+  let name = prompt("What is your name?");
+
+const allowedNames = ["ahmed", "mohamed", 'sohib'];
+
+if (name && allowedNames.includes(name.trim().toLowerCase())) {
+    alert(`Welcome ${name}!`);
+} else {
+    alert("Access Denied");
+    document.body.innerHTML = "<h1>Access Denied</h1>";
+}
+
+</script>
   </body>
 </html>
